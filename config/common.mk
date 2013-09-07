@@ -3,8 +3,7 @@ PRODUCT_BRAND ?= projectelite
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.elite.superuser
 
-PRODUCT_COPY_FILES += \
-    vendor/common/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+PRODUCT_BOOTANIMATION := vendor/common/prebuilt/common/bootanimation/bootanimation.zip 
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -107,21 +106,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
-# Extra tools in CM
+# Extra tools in Project Elite
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
     tune2fs \
     bash \
-    vim \
-    nano \
-    htop \
-    powertop \
-    lsof \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
     ntfsfix \
     ntfs-3g
 
@@ -134,10 +125,6 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
-
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/common/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/common/overlay/common
