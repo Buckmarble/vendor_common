@@ -51,7 +51,7 @@ PRODUCT_COPY_FILES += \
 
 # Project Elite - specific init file
 PRODUCT_COPY_FILES += \
-    vendor/common/prebuilt/common/etc/init.pe.rc:root/init.pe.rc
+    vendor/common/prebuilt/common/etc/init.local.rc:root/init.local.rc
 
 # Project Elite kernel CPU support
 PRODUCT_COPY_FILES += \
