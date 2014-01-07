@@ -1,0 +1,7 @@
+Darkslide
+===========
+
+Maintainers (Darkslide 1.0):
+-----------------------------
+* __Mrgatesjunior (Developer / Base owner)
+* __Buckmarble (Developer / Project Elite Kernel)

@@ -1,9 +1,11 @@
-Team Project-Elite
-===============
+Darkslide AOSP Rom
+==================
+
+Visit http://github.com/mrgatesjunior for full source and git access.
+
 
 CHANGELOG (notable new features)
 ---------
 
-### 1.0.0
-* Initial 4.3 AOSP Build
+Initial Build and release (01/06/2014)
 

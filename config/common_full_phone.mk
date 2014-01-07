@@ -7,11 +7,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Argon.ogg \
     ro.config.alarm_alert=Hassium.ogg
 
-PRODUCT_PACKAGES += \
-  Mms
+ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
+    PRODUCT_COPY_FILES += \
+        vendor/common/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
+endif
 
-# BT config
-PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
-
-
+$(call inherit-product, vendor/common/config/telephony.mk)
