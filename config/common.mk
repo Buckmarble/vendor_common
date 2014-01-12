@@ -134,8 +134,6 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     audio_effects.conf
 
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver
 
 # Extra tools
 PRODUCT_PACKAGES += \
