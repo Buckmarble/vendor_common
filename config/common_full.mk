@@ -15,7 +15,6 @@ include vendor/common/config/audio.mk
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    DarkLauncher \
     Galaxy4 \
     HoloSpiralWallpaper \
     LiveWallpapers \
